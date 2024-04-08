@@ -1,0 +1,1 @@
+﻿select email,password from registration where email='ruchita@gmail.com'and password='ruchita8'

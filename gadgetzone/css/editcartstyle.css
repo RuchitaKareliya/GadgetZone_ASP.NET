@@ -1,0 +1,24 @@
+﻿h1{
+    font-size:35px;
+}
+.edb{
+   align-content:center;
+
+}
+.item{
+    font-size:25px;
+}
+.qitem{
+    font-size:25px;
+    border:solid;
+    border-width:2px;
+    border-color:black;
+    border-radius:10px;
+    align-content:center;
+}
+.tab{
+    background-color:wheat;
+}
+.bst{
+    border-radius:5px;
+}

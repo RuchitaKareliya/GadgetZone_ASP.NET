@@ -1,0 +1,157 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="gz.master.cs" Inherits="gadgetzone.gz" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="css/bformstyle.css" rel="stylesheet" />
+    <link href="css/editcartstyle.css" rel="stylesheet" />
+    <link href="css/loginstyle.css" rel="stylesheet" />
+    <link href="css/pstyle.css" rel="stylesheet" />
+    <link href="css/registrationstyle.css" rel="stylesheet" />
+    <link href="css/singlepstyle.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    	<header class="sear">
+		<a href="#" class="logo"> GadgetZone </a>
+
+		<input type="checkbox" name="" id="menu-bar">
+		<label for="menu-bar"><i class="fas fa-bars"></i></label>
+		<nav class="navbar">
+        <ul>
+            <li><a href="index.aspx">Home</a><li>
+            
+            <li><a href="#categories">categories</a>
+                <ul>
+                    <li><a href="prolaptops.aspx">Laptop</a>
+                        
+                    </li>
+                    <li><a href="protvs.aspx">Television</a>
+                        
+                    </li>
+                    <li><a href="promobiles.aspx">Mobile</a>
+                        
+                    </li>
+                    <li><a href="procameras.aspx">Camera</a>
+                        
+                    </li>
+                    <li><a href="prospeakers.aspx">Speaker</a>
+                        
+                    </li>
+                </ul>
+            </li>
+            
+            <li><a href="contactus.aspx" class="contactus.aspx">ContactUs</a></li>
+            <li><a href="feedback.aspx" class="feedback.aspx">Feedback</a></li>
+            <li><a href="login.aspx" class="login.aspx">Login</a></li>
+
+            <a href="wishlist.aspx" class="icons"><i class="fas fa-heart"></i></a>
+            <a href="addtocart.aspx" class="icons"><i class="fas fa-shopping-cart"></i></a>
+            <a href="logout.aspx" class="icons"><i class="fas fa-sign-out-alt"></i></a>
+            <!--<a href="#" class="icons"><i class="fas fa-search"></i></a>-->
+            <div class="icons">
+        
+
+    
+       <%-- <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="search hear...">
+            <label for="search-box" class="fas fa-search">
+            </label>
+        </form>
+
+        </ul>
+
+    </nav>
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+    </div>
+    </div>
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div href="home.php" class="fas fa-shopping-cart" id="cart-btn"></div>
+        </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>--%>
+
+    
+
+<!-- custom js file link  -->
+
+	</header>
+     <section class="home" style="background-image:url(img/homepage17.jpg);">
+
+    <div class="content" >
+        <h1><span>GadgetZone</span></h1>
+        <p>Essential gadgetzone for everyday use.</p>
+    </div>
+
+</section>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> Gadget Zone<!--<i class="fas fa-shopping-basket"></i>--> </h3>
+            <p></p>
+            <!--<div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>-->
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> 890-098-8901 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> 456-654-4567 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> krj@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> rajkot, india - 360003 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.aspx" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="index.aspx" class="links"> <i class="fas fa-arrow-right"></i> about as </a>
+           <!-- <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>-->
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="contactus.aspx" class="links"> <i class="fas fa-arrow-right"></i> contactus </a>
+            <a href="feedback.aspx" class="links"> <i class="fas fa-arrow-right"></i> feedback </a>
+        </div>
+    </div>
+
+    <div class="credit">
+        <div> @GadgetZone 2022</div> 
+        <div>created by <span> Kareliya Ruchita J </span><!-- | all rights reserved --></div>
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+
+       
+    <p>
+&nbsp;</p>
+
+        </form>
+</body>
+</html>

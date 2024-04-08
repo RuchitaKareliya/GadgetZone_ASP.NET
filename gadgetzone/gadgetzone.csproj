@@ -1,0 +1,609 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E34058E-557B-4C89-829D-657B36C3F7D8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gadgetzone</RootNamespace>
+    <AssemblyName>gadgetzone</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44379</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="addtocart.aspx" />
+    <Content Include="admin\add_product.aspx" />
+    <Content Include="admin\add_product_form.aspx" />
+    <Content Include="admin\adminlogin.aspx" />
+    <Content Include="admin\adminlogout.aspx" />
+    <Content Include="admin\contactlist.aspx" />
+    <Content Include="admin\css\loginstyle.css" />
+    <Content Include="admin\css\pformstyle.css" />
+    <Content Include="admin\css\style.css" />
+    <Content Include="admin\feedbacklist.aspx" />
+    <Content Include="admin\index.aspx" />
+    <Content Include="admin\js\script.js" />
+    <Content Include="admin\userlist.aspx" />
+    <Content Include="admin\WebForm1.aspx" />
+    <Content Include="admin\wishlist.aspx" />
+    <Content Include="App_Data\gadgetzone.mdf" />
+    <Content Include="App_Data\gadgetzone_log.ldf">
+      <DependentUpon>gadgetzone.mdf</DependentUpon>
+    </Content>
+    <Content Include="checkout.aspx" />
+    <Content Include="contactus.aspx" />
+    <Content Include="css\bformstyle.css" />
+    <Content Include="css\editcartstyle.css" />
+    <Content Include="css\feedback.css" />
+    <Content Include="css\loginstyle.css" />
+    <Content Include="css\pstyle.css" />
+    <Content Include="css\registrationstyle.css" />
+    <Content Include="css\singlepstyle.css" />
+    <Content Include="css\style.css" />
+    <Content Include="deletecart.aspx" />
+    <Content Include="deletewishlist.aspx" />
+    <Content Include="editcart.aspx" />
+    <Content Include="feedback.aspx" />
+    <Content Include="img\2021 Apple MacBook Pro.jpg" />
+    <Content Include="img\2pc Klipsch AW525 Outdoor Loudspeakers Black.jpg" />
+    <Content Include="img\a1 HomePod mini.jpg" />
+    <Content Include="img\a15 Apple iPhone 8 Mini.jpg" />
+    <Content Include="img\a4 Hot Sale Homepod Mini.jpg" />
+    <Content Include="img\a6 Apple Homopod with Siri assistant.jpg" />
+    <Content Include="img\a7 Amazon Echo Dot.jpg" />
+    <Content Include="img\acamera.jpg" />
+    <Content Include="img\adminlogo.jpg" />
+    <Content Include="img\adminlogo2.jpg" />
+    <Content Include="img\amobile.jpg" />
+    <Content Include="img\Apple HomePod Space Gray.jpg" />
+    <Content Include="img\Apple iPad mini Wi-Fi.jpg" />
+    <Content Include="img\Apple iPhone 11.jpg" />
+    <Content Include="img\Apple iPhone 12 Mini.jpg" />
+    <Content Include="img\Apple iPhone 12.jpg" />
+    <Content Include="img\Apple iPhone 13 256GB - Starlight.jpg" />
+    <Content Include="img\Apple iPhone 13 Pro.jpg" />
+    <Content Include="img\Apple iPhone SE.jpg" />
+    <Content Include="img\Apple MacBook Pro 14 M1 Pro chip macOS Monterey Laptop .jpg" />
+    <Content Include="img\Apple MacBook Pro I7.jpg" />
+    <Content Include="img\Apple MGN63HNA MacBook Air.jpg" />
+    <Content Include="img\aspeaker.jpg" />
+    <Content Include="img\Asus Rog 5 S Pro Phantom Black 512 Gb 18 Gb Ram.jpg" />
+    <Content Include="img\Asus Rog 5s.jpg" />
+    <Content Include="img\Asus ROG 6 Pro 5G Dual Sim 512GB White %2818GB RAM%29.jpg" />
+    <Content Include="img\Asus ROG Strix.jpg" />
+    <Content Include="img\ASUS TUF Gaming.jpg" />
+    <Content Include="img\Asus Vivobook 15.jpg" />
+    <Content Include="img\Asus Vivobook14.jpg" />
+    <Content Include="img\Asus X543MA-GQ1015T Laptop.jpg" />
+    <Content Include="img\Asus ZenBook Pro.jpg" />
+    <Content Include="img\Asus Zenfone 8 Flip Zs672ks 5g Dual 256gb 8gb Ram Factory Unlocked Gsm Only.jpg" />
+    <Content Include="img\Asus Zenfone 8 Unlocked Zs590ks 128gb 8gb Ram Fast Ship Dhl Fedex.jpg" />
+    <Content Include="img\Asus Zenfone 9 AI2202 5G 128GB Dual Sim 8GB Ram GSM.jpg" />
+    <Content Include="img\ASUS Zenfone Max Pro M1 %2864 GB%29 %284 GB RAM%29.jpg" />
+    <Content Include="img\atv2.jpg" />
+    <Content Include="img\AUE70 Crystal 4K UHD.jpg" />
+    <Content Include="img\b2 Bose SoundLink Revolve.jpg" />
+    <Content Include="img\b3 Bose Soundlink Micro.jpg" />
+    <Content Include="img\b8 Bose SoundLink Flex Bluetooth.jpg" />
+    <Content Include="img\Bluetooth Speaker JBL Mini Boost 4.jpg" />
+    <Content Include="img\Bose 251 Environmental Outdoor Speakers.jpg" />
+    <Content Include="img\Bose Home Speaker 300.jpg" />
+    <Content Include="img\Bose Surround Speakers.jpg" />
+    <Content Include="img\cameralogo1.png" />
+    <Content Include="img\Canon EOS 200D II 24.1MP.jpg" />
+    <Content Include="img\Canon EOS 80D.jpg" />
+    <Content Include="img\CANON EOS R.jpg" />
+    <Content Include="img\Canon Eos R3 Mirrorless Camera.jpg" />
+    <Content Include="img\CANON EOS R3.jpg" />
+    <Content Include="img\CANON EOS RP.jpg" />
+    <Content Include="img\Dell Inspiron 15 Laptop.jpg" />
+    <Content Include="img\Dell Inspiron 15.jpg" />
+    <Content Include="img\Dell Inspiron 7560.jpg" />
+    <Content Include="img\Dell Inspiron Athlon Dual Core 3050u.jpg" />
+    <Content Include="img\Dell Vostro 3515 Laptop.jpg" />
+    <Content Include="img\Dell Vostro Core I5.jpg" />
+    <Content Include="img\GreenApple 5W.jpg" />
+    <Content Include="img\homepage17.jpg" />
+    <Content Include="img\homepage3.jpg" />
+    <Content Include="img\HP 14s-dq3033TU.jpg" />
+    <Content Include="img\HP 14s-fq1089AU Laptop.jpg" />
+    <Content Include="img\Hp 15s Ryzen 3.jpg" />
+    <Content Include="img\HP ENVY x360 Laptop.jpg" />
+    <Content Include="img\Hp Pavilion Aero Ryzen 5 Hexa Core 5600u.jpg" />
+    <Content Include="img\Hp Ryzen 3.jpg" />
+    <Content Include="img\Infinity %28JBL%29 Fuze Pint.jpg" />
+    <Content Include="img\j1 JBL Go Essential.jpg" />
+    <Content Include="img\j11 JBL Clip 3.jpg" />
+    <Content Include="img\j2 JBL GO Portable.jpg" />
+    <Content Include="img\JBL Partybox 310.jpg" />
+    <Content Include="img\JBL Stage A120 Bookshelf Speaker.jpg" />
+    <Content Include="img\k14 Used KODAK D5600.jpg" />
+    <Content Include="img\Klipsch KIO-650 Indoor Outdoor AllWeather Speakers.jpg" />
+    <Content Include="img\Klipsch ProMedia 2.1.jpg" />
+    <Content Include="img\Klipsch Reference Cinema Dolby Atmos.jpg" />
+    <Content Include="img\Klipsch Reference R-26FA 5.1.jpg" />
+    <Content Include="img\Klipsch Reference Series R-12SW.jpg" />
+    <Content Include="img\Klipsch The One.jpg" />
+    <Content Include="img\KODAK D5600 18-55KIT.jpg" />
+    <Content Include="img\KODAK D5600 Dslr Camera %28Body Only%29 %28Open Box%29.jpg" />
+    <Content Include="img\KODAK D5600 DSLR Camera with 18-55mm and 70-300mm Lenses.jpg" />
+    <Content Include="img\KODAK D5600 DSLR Camera with AF-P 18-55 mm + AF-P 70-300 mm VR Kit.jpg" />
+    <Content Include="img\KODAK D5600 DSLR.jpg" />
+    <Content Include="img\KODAK D5600 with 18 55mm VR Lens.jpg" />
+    <Content Include="img\KODAK D5600 with 18.jpg" />
+    <Content Include="img\KODAK D5600 with AF-P 18-55.jpg" />
+    <Content Include="img\laptoplog.png" />
+    <Content Include="img\Lenovo IdeaPad 3 15ALC6 82KU017HIN Laptop.jpg" />
+    <Content Include="img\Lenovo IdeaPad 3.jpg" />
+    <Content Include="img\Lenovo Ideapad 5.jpg" />
+    <Content Include="img\Lenovo IdeaPad D330.jpg" />
+    <Content Include="img\Lenovo Ideapad S145.jpg" />
+    <Content Include="img\Lenovo T410.jpg" />
+    <Content Include="img\LG 65UQ8020PSB.jpg" />
+    <Content Include="img\LG 81.28.jpg" />
+    <Content Include="img\LG LM562.jpg" />
+    <Content Include="img\LG LM63.jpg" />
+    <Content Include="img\LG OLED55A1PTZ 55.jpg" />
+    <Content Include="img\LG UQ80.jpg" />
+    <Content Include="img\logo.jpg" />
+    <Content Include="img\MacBook 12 %282017%29.jpg" />
+    <Content Include="img\MacBook Air.jpg" />
+    <Content Include="img\Mi 43 inch Ultra HD %284K%29.jpg" />
+    <Content Include="img\Mi 43 inch Ultra HD 4K.jpg" />
+    <Content Include="img\Mi 4APRO .jpg" />
+    <Content Include="img\Mi 5A  ELA4777IN-L40M7-EA.jpg" />
+    <Content Include="img\Mi 5A ELA4773IN-L43M7-EA.jpg" />
+    <Content Include="img\Mi 5A.jpg" />
+    <Content Include="img\Mi 5X.jpg" />
+    <Content Include="img\mobilelogo.png" />
+    <Content Include="img\n12 NIKON D5600.jpg" />
+    <Content Include="img\n6 Nikon D5600 DSLR with 18-140mm Lens Kit.jpg" />
+    <Content Include="img\n7 NIKON D5600 18-55KIT DSLR Camera.jpg" />
+    <Content Include="img\NIKON Coolpix A100 Point &amp; Shoot Camera.jpg" />
+    <Content Include="img\Nikon D5600 DSLR with 18-140mm Lens Kit.jpg" />
+    <Content Include="img\NIKON D5600 WITH 18-55MM.jpg" />
+    <Content Include="img\Panasonic 100 cm TH-40HS450DX.jpg" />
+    <Content Include="img\Panasonic 4K Ultra HD TV.jpg" />
+    <Content Include="img\Panasonic FX650.jpg" />
+    <Content Include="img\Panasonic LX 108 cm.jpg" />
+    <Content Include="img\Panasonic LX 139 cm.jpg" />
+    <Content Include="img\profilepic2.jpg" />
+    <Content Include="img\Realme 10 5G.jpg" />
+    <Content Include="img\Realme 10 Pro 5G.jpg" />
+    <Content Include="img\realme 8 5G %282%29.jpg" />
+    <Content Include="img\Realme 9 Pro+ 5G.jpg" />
+    <Content Include="img\Realme C30.jpg" />
+    <Content Include="img\Realme C35 128 GB.jpg" />
+    <Content Include="img\Realme C35.jpg" />
+    <Content Include="img\Realme X.jpg" />
+    <Content Include="img\Redmi 10 2.jpg" />
+    <Content Include="img\Redmi 10.jpg" />
+    <Content Include="img\Redmi 9 Activ.jpg" />
+    <Content Include="img\Redmi K50 Gaming Edition.jpg" />
+    <Content Include="img\Redmi Note 10T 5G.jpg" />
+    <Content Include="img\Redmi Note 11 Pro+ 5G.jpg" />
+    <Content Include="img\Redmi Note 11T Pro Plus.jpg" />
+    <Content Include="img\Refurbished Sony Bravia.jpg" />
+    <Content Include="img\Refurbished Sony.jpg" />
+    <Content Include="img\s1 Sony Alpha ILCE-7M3K.jpg" />
+    <Content Include="img\S1.jpg" />
+    <Content Include="img\s12 SAMSUNG NX20.jpg" />
+    <Content Include="img\s2 Sony Alpha A7.jpg" />
+    <Content Include="img\s3 SONY ILCE-3500J.jpg" />
+    <Content Include="img\s5 Sony Alpha a6400.jpg" />
+    <Content Include="img\SAMSUNG DIGIMAX NV3 7MP.jpg" />
+    <Content Include="img\Samsung EC-WB350FBPBUS.jpg" />
+    <Content Include="img\Samsung Galaxy A04e.jpg" />
+    <Content Include="img\Samsung Galaxy A50s.jpg" />
+    <Content Include="img\Samsung Galaxy F13 64 GB.jpg" />
+    <Content Include="img\Samsung Galaxy M33 5G.jpg" />
+    <Content Include="img\Samsung Galaxy S10 plus.jpg" />
+    <Content Include="img\Samsung Galaxy S21 FE 5G.jpg" />
+    <Content Include="img\Samsung Galaxy S22 Ultra 5G.jpg" />
+    <Content Include="img\SAMSUNG Series 4.jpg" />
+    <Content Include="img\SAMSUNG Series 5.jpg" />
+    <Content Include="img\SAMSUNG Series 7.jpg" />
+    <Content Include="img\Samsung UA43AUE65AKXXL.jpg" />
+    <Content Include="img\Samsung UA58AUE70AK.jpg" />
+    <Content Include="img\samsungc5 SAMSUNG ELECTRONICS EV-NX500ZBMIUS.jpg" />
+    <Content Include="img\samsungc6 SAMSUNG ES28 DIGITAL CAMERA.jpg" />
+    <Content Include="img\samsungc7 SAMSUNG EV-NX3000BEIUS.jpg" />
+    <Content Include="img\samsungmGalaxyAO4s.jpg" />
+    <Content Include="img\SO1.jpg" />
+    <Content Include="img\SO2.jpg" />
+    <Content Include="img\SO3.jpg" />
+    <Content Include="img\SO4.jpg" />
+    <Content Include="img\SO5.jpg" />
+    <Content Include="img\SONY 24 INCH LED TV.jpg" />
+    <Content Include="img\Sony Bravia 80 cm.jpg" />
+    <Content Include="img\Sony Bravia R 302 F.jpg" />
+    <Content Include="img\Sony Bravia.jpg" />
+    <Content Include="img\Sony MHC-V02.jpg" />
+    <Content Include="img\Sony Mhc-v43d With Party Lights Karaoke Bluetooth Party Speakerblack 2.0 C.jpg" />
+    <Content Include="img\Sony SA D20 2.1.jpg" />
+    <Content Include="img\Sony Srs-Xb13.jpg" />
+    <Content Include="img\Sony SRS-XP500.jpg" />
+    <Content Include="img\sony7 Sony SRS-XB01.jpg" />
+    <Content Include="img\sonyc6 Sony Alpha A7 III Mirrorless Camera.jpg" />
+    <Content Include="img\sonyc7 SONY A7 IV MIRRORLESS CAMERA.jpg" />
+    <Content Include="img\speaker.png" />
+    <Content Include="img\speakerlogo.png" />
+    <Content Include="img\speakerlogo1.png" />
+    <Content Include="img\tvlogo.png" />
+    <Content Include="img\user-icon.jpg" />
+    <Content Include="img\user-icon2.jpg" />
+    <Content Include="img\user-icon3.jpg" />
+    <Content Include="img\windowimg.jpg" />
+    <Content Include="img\Xiaomi 12 Pro 5G.jpg" />
+    <Content Include="img\Xiaomi Mi TV P1E.jpg" />
+    <Content Include="img\Xiaomi Redmi Note 11 SE.jpg" />
+    <Content Include="img\Xiaomi Redmi Note 12 Pro 5G.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="js\script.js" />
+    <Content Include="login.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="procameras.aspx" />
+    <Content Include="prolaptops.aspx" />
+    <Content Include="promobiles.aspx" />
+    <Content Include="prospeakers.aspx" />
+    <Content Include="protvs.aspx" />
+    <Content Include="registration.aspx" />
+    <Content Include="singleproduct.aspx" />
+    <Content Include="thanks.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="wishlist.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addtocart.aspx.cs">
+      <DependentUpon>addtocart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addtocart.aspx.designer.cs">
+      <DependentUpon>addtocart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\add_product.aspx.cs">
+      <DependentUpon>add_product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\add_product.aspx.designer.cs">
+      <DependentUpon>add_product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\add_product_form.aspx.cs">
+      <DependentUpon>add_product_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\add_product_form.aspx.designer.cs">
+      <DependentUpon>add_product_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admingz.Master.cs">
+      <DependentUpon>admingz.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admingz.Master.designer.cs">
+      <DependentUpon>admingz.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminlogin.aspx.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminlogin.aspx.designer.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\adminlogout.aspx.cs">
+      <DependentUpon>adminlogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\adminlogout.aspx.designer.cs">
+      <DependentUpon>adminlogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\contactlist.aspx.cs">
+      <DependentUpon>contactlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\contactlist.aspx.designer.cs">
+      <DependentUpon>contactlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\feedbacklist.aspx.cs">
+      <DependentUpon>feedbacklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\feedbacklist.aspx.designer.cs">
+      <DependentUpon>feedbacklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\userlist.aspx.cs">
+      <DependentUpon>userlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\userlist.aspx.designer.cs">
+      <DependentUpon>userlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\wishlist.aspx.cs">
+      <DependentUpon>wishlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\wishlist.aspx.designer.cs">
+      <DependentUpon>wishlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.aspx.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout.aspx.designer.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deletecart.aspx.cs">
+      <DependentUpon>deletecart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deletecart.aspx.designer.cs">
+      <DependentUpon>deletecart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deletewishlist.aspx.cs">
+      <DependentUpon>deletewishlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deletewishlist.aspx.designer.cs">
+      <DependentUpon>deletewishlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editcart.aspx.cs">
+      <DependentUpon>editcart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editcart.aspx.designer.cs">
+      <DependentUpon>editcart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gz.Master.cs">
+      <DependentUpon>gz.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gz.Master.designer.cs">
+      <DependentUpon>gz.Master</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="procameras.aspx.cs">
+      <DependentUpon>procameras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="procameras.aspx.designer.cs">
+      <DependentUpon>procameras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="prolaptops.aspx.cs">
+      <DependentUpon>prolaptops.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="prolaptops.aspx.designer.cs">
+      <DependentUpon>prolaptops.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="promobiles.aspx.cs">
+      <DependentUpon>promobiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="promobiles.aspx.designer.cs">
+      <DependentUpon>promobiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="prospeakers.aspx.cs">
+      <DependentUpon>prospeakers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="prospeakers.aspx.designer.cs">
+      <DependentUpon>prospeakers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="protvs.aspx.cs">
+      <DependentUpon>protvs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="protvs.aspx.designer.cs">
+      <DependentUpon>protvs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="registration.aspx.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registration.aspx.designer.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="singleproduct.aspx.cs">
+      <DependentUpon>singleproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="singleproduct.aspx.designer.cs">
+      <DependentUpon>singleproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="thanks.aspx.cs">
+      <DependentUpon>thanks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thanks.aspx.designer.cs">
+      <DependentUpon>thanks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wishlist.aspx.cs">
+      <DependentUpon>wishlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wishlist.aspx.designer.cs">
+      <DependentUpon>wishlist.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\admingz.Master" />
+    <Content Include="gz.Master" />
+    <Content Include="img\Apple iPhone 12 Mini.webp" />
+    <Content Include="img\Asus Rog 5 S Pro Phantom Black 512 Gb 18 Gb Ram.webp" />
+    <Content Include="img\Asus Rog 5s.webp" />
+    <Content Include="img\Asus Rog Phone 3.webp" />
+    <Content Include="img\Asus Zenfone 9 AI2202 5G 128GB Dual Sim 8GB Ram GSM.webp" />
+    <Content Include="img\Klipsch ProMedia 2.1.webp" />
+    <Content Include="img\Klipsch Reference Series R-12SW.webp" />
+    <Content Include="img\Realme 10 5G.j[g.webp" />
+    <Content Include="img\Realme C11.webp" />
+    <Content Include="img\Realme C35.webp" />
+    <Content Include="img\Sony SA D20 2.1.webp" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50191</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44379/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

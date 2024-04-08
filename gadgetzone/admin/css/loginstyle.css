@@ -1,0 +1,85 @@
+﻿.img {
+    margin: 0;
+    padding: 0;
+    background-image: url('../../img/homepage3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: sans-serif;
+}
+.loginbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 420px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.5);
+}
+.user{
+    width:100px;
+    height:100px;
+    overflow:hidden;
+    top:calc(-100px/2); 
+    left:calc(50% - 50px);
+    position:absolute;
+}
+h2{
+    padding:0;
+    margin:0;
+    text-align:center;
+    color: rgb(255 255 255)
+}
+.lbluser, .lblpass, .lblnote{
+    font-weight: bold;
+    color: #fff;
+}
+.txtuser, .txtpass, .btnsubmit {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.txtuser, .txtpass {
+    border: none;
+    border-bottom: 3px solid #fff;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background-color: transparent;
+}
+::placeholder{
+    color:rgba(255,255,255,.5);
+
+}
+.err{
+    color:red;
+}
+.btnsubmit {
+    border: none;
+    outline: none;
+    height: 40px;
+
+    font-size: 16px;
+    color: #180808;
+    background-color: #ff6a00;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+    .btnsubmit:hover {
+        background-color: rgb(255 255 255);
+        /*color:;*/
+    }
+.btnlink{
+    font-size:16px;
+    font-weight:700;
+    /*text-decoration:none;
+    color:;*/
+}
+/*.btnlink:hover{
+    text-transform:underline;
+}*/

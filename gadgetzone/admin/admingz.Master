@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admingz.master.cs" Inherits="gadgetzone.admin.admingz" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="css/loginstyle.css" rel="stylesheet" />
+    <link href="css/pformstyle.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+	
+    <form id="form1" runat="server">
+
+    <!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">GadgetZone</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="index.aspx">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="userlist.aspx">
+					<i class='bx bxs-user' ></i>
+					<span class="text">RegisterUser</span>
+				</a>
+			</li>
+			<li>
+				<a href="add_product.aspx">
+					<i class='bx bxs-store' ></i>
+					<span class="text">Product</span>
+				</a>
+			</li>
+			<li>
+				<a href="contactlist.aspx">
+					<i class='bx bxs-contact' ></i>
+					<span class="text">ContactUs</span>
+				</a>
+			</li>
+			<li>
+				<a href="feedbacklist.aspx">
+					<i class='bx bxs-comment' ></i>
+					<span class="text">Feedback</span>
+				</a>
+			</li>
+			<li>
+				<a href="wishlist.aspx">
+					<i class='bx bxs-heart' ></i>
+					<span class="text">WishList</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<!--<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>-->
+			 
+			<li>
+					<%--<a href="adminlogout.aspx" class="logout">
+						<i class='bx bxs-log-out-circle' ></i>
+						<span class="text">Logout</span>
+					--%>
+				<a href="" class="logout">
+			    <i class='bx bxs-log-out' ></i>
+			        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Logout" BackColor="White" BorderStyle="None" Font-Size="Medium" ForeColor="Red" CausesValidation="false" />
+			  </a>
+			</li>
+		</ul>
+	</section>
+	
+	<!-- SIDEBAR -->
+
+
+
+	<%-- CONTENT --%>
+	
+		<%-- NAVBAR --%>
+	<section id="content">
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+				<%--<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>--%>
+			<input type="checkbox" id="switch-mode" hidden>
+			<%--<label for="switch-mode" class="switch-mode"></label>-->
+			<!--<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>--%>
+			<a href="#" class="profile">
+                <img src="../img/profilepic2.jpg" />
+			</a>
+		</nav>
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+   
+</section>   
+    </form>
+  
+</body>
+</html>

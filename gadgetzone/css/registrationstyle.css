@@ -1,0 +1,116 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/homepage3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.loginbox {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 900px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.user {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+    position: absolute;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: rgb(255 255 255)
+}
+
+.lblfull, .lbluser, .lblpass, .lblcpass, .lblmob, .lbladd, .lblpin, .lblcity, .lblstat, .lblnote{
+    font-weight: bold;
+    color: #fff;
+}
+
+.txtfull, .txtuser, .txtpass, .txtcpass, .txtmob, .txtadd, .txtpin, .txtcity, .txtstat, .btnsubmit {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.txtfull, .txtuser, .txtpass, .txtcpass, .txtmob, .txtpin, .txtcity, .txtstat, .txtadd {
+    border: none;
+    border-bottom: 3px solid #fff;
+    outline: none;
+    height: 20px;
+    color: #fff;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: rgba(255,255,255,.5);
+}
+.input-field i {
+    position: absolute;
+    left:2%;
+    /*    top: 50%;
+*/
+    /*    transform: translateY(-50%);
+*/ color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.input-field:is(:focus, :valid) ~ i {
+    color: var(--orange);
+}
+
+/*.input-field i.icon {
+    left: 0;
+}*/
+
+.input-field i.showHidePw {
+    right: 0;
+    left:80%;
+    cursor: pointer;
+}
+.btnsubmit {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #180808;
+    background-color: #ff6a00;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+    .btnsubmit:hover {
+        background-color: rgb(255 255 255);
+        color:;
+    }
+
+.btnlink {
+    font-size: 16px;
+    font-weight: 700;
+    /*text-decoration:none;
+    color:;*/
+}
+/*.btnlink:hover{
+    text-transform:underline;
+}*/
+
